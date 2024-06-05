@@ -20,7 +20,7 @@ function App() {
   }
 
   function handleDeleteTodo(index: number) {
-    const newTodoList = todos.filter((todo: string, todoIndex) => {
+    const newTodoList = todos.filter((_todo: string, todoIndex) => {
       return todoIndex !== index;
     });
     setTodos(newTodoList);
